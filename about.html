@@ -1,1 +1,894 @@
-2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About Seovaro — Enterprise Digital Intelligence & Growth Strategy</title>
+    <meta name="description" content="Learn about Seovaro's mission, leadership, and two decades of enterprise digital strategy, SEO, and growth intelligence for Fortune 500 brands worldwide." />
+    <link rel="canonical" href="https://seovaro.online/about.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230d3b3a' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='45' font-weight='bold' fill='%23f4a583' text-anchor='middle'%3ESV%3C/text%3E%3C/svg%3E" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About Seovaro — Enterprise Growth Strategy" />
+    <meta property="og:url" content="https://seovaro.online/about.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEOVARO"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SEOVARO');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #faf6f1;
+            color: #2c2c2c;
+            font-family: 'DM Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        :root {
+            --primary: #0d3b3a;
+            --primary-light: #1a5554;
+            --accent: #f4a583;
+            --accent-dark: #e8935c;
+            --secondary: #8a9b8f;
+            --light: #faf6f1;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        header {
+            background: var(--white);
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(13, 59, 58, 0.08);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 22px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-badge {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        nav {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+            transition: width 0.35s ease;
+        }
+
+        nav a.active::after,
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2.5px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #faf6f1 0%, #f5f0e8 50%, var(--light) 100%);
+            padding: 110px 50px 100px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(244, 165, 131, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 62px;
+            color: var(--primary);
+            margin-bottom: 22px;
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 .highlight {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: #6a6a6a;
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 100px 50px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .section-header .label {
+            font-size: 11px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            display: block;
+        }
+
+        .section-header h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 56px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .section-header h2 .highlight {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 16px;
+            color: #6a6a6a;
+            max-width: 680px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 70px;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .story-text .label {
+            font-size: 11px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            display: block;
+        }
+
+        .story-text h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 42px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 24px;
+            line-height: 1.25;
+            letter-spacing: -0.5px;
+        }
+
+        .story-text p {
+            font-size: 15px;
+            color: #6a6a6a;
+            line-height: 1.9;
+            margin-bottom: 18px;
+            font-weight: 300;
+        }
+
+        .story-panel {
+            background: var(--white);
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            padding: 50px 40px;
+        }
+
+        .story-panel-row {
+            display: flex;
+            gap: 22px;
+            padding: 22px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .story-panel-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .story-panel-row:first-child {
+            padding-top: 0;
+        }
+
+        .story-panel-row i {
+            font-size: 24px;
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .story-panel-row h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 17px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+
+        .story-panel-row p {
+            font-size: 13px;
+            color: #6a6a6a;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 50px;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 40px 30px;
+            border-left: 4px solid var(--accent);
+            background: var(--white);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            box-shadow: 0 8px 25px rgba(244, 165, 131, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .stat-item h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 52px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .stat-item p {
+            font-size: 12px;
+            color: #6a6a6a;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .why-choose {
+            background: linear-gradient(135deg, #f5f0e8 0%, var(--light) 100%);
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            padding: 80px 70px;
+            margin-bottom: 100px;
+        }
+
+        .why-choose h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 60px;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+        }
+
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 55px;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 20px;
+        }
+
+        .why-icon {
+            font-size: 36px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .why-content h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .why-content p {
+            font-size: 14px;
+            color: #6a6a6a;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            margin-bottom: 100px;
+        }
+
+        .team-card {
+            background: var(--white);
+            border: 1px solid #e5e5e5;
+            padding: 45px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .team-card:hover {
+            box-shadow: 0 15px 40px rgba(13, 59, 58, 0.1);
+            transform: translateY(-8px);
+            border-color: var(--accent);
+        }
+
+        .team-avatar {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 24px;
+            border-radius: 4px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-family: 'Merriweather', serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .team-card h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 6px;
+            font-weight: 400;
+        }
+
+        .team-role {
+            font-size: 11px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            display: block;
+        }
+
+        .team-card p {
+            font-size: 13px;
+            color: #6a6a6a;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            padding: 100px 70px;
+            text-align: center;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 52px;
+            margin-bottom: 25px;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-section .highlight {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 16px;
+            margin-bottom: 40px;
+            opacity: 0.96;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            border: none;
+            padding: 16px 42px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(244, 165, 131, 0.3);
+        }
+
+        footer {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 40px 50px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .floating-contact {
+            position: fixed;
+            right: 35px;
+            bottom: 35px;
+            z-index: 99;
+        }
+
+        .contact-options {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 15px;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floating-contact:hover .contact-options {
+            display: flex;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(244, 165, 131, 0.2);
+            border: none;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .float-whatsapp {
+            background: #25D366;
+        }
+
+        .float-email {
+            background: #EA4335;
+        }
+
+        .float-linkedin {
+            background: #0077B5;
+        }
+
+        .float-main {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            width: 65px;
+            height: 65px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .header-container {
+                padding: 16px 30px;
+            }
+
+            .hero {
+                padding: 70px 30px 60px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .container {
+                padding: 60px 30px;
+            }
+
+            .section-header h2 {
+                font-size: 36px;
+            }
+
+            .story-text h2 {
+                font-size: 30px;
+            }
+
+            .why-choose {
+                padding: 50px 30px;
+            }
+
+            .cta-section {
+                padding: 60px 30px;
+            }
+
+            .cta-section h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <div class="logo-badge">SV</div>
+                SEOVARO
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html" class="active">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/923074646927" class="cta-btn">Consultation</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Two Decades of <span class="highlight">Strategic Intelligence</span></h1>
+            <p>Seovaro partners with enterprise brands to turn search visibility into durable market advantage — combining technical rigor, editorial craft, and executive-level counsel.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="story-grid">
+            <div class="story-text">
+                <span class="label">Our Story</span>
+                <h2>Built for Brands That Refuse to Blend In</h2>
+                <p>Seovaro was founded on a simple premise: enterprise SEO deserves the same rigor as any other boardroom discipline. Too many agencies treat search as a checklist. We treat it as a growth lever tied directly to revenue, market share, and brand equity.</p>
+                <p>Over the past twenty years, our team has worked inside the search strategies of Fortune 500 brands, high-growth challengers, and category leaders across North America and Europe — building programs that compound rather than expire when a campaign ends.</p>
+                <p>Today, Seovaro operates as an extension of our clients' own leadership teams, embedding strategic intelligence into every stage of digital growth.</p>
+            </div>
+            <div class="story-panel">
+                <div class="story-panel-row">
+                    <i class="fas fa-bullseye"></i>
+                    <div>
+                        <h4>Our Mission</h4>
+                        <p>Turn search and content into a compounding growth asset for enterprise brands.</p>
+                    </div>
+                </div>
+                <div class="story-panel-row">
+                    <i class="fas fa-eye"></i>
+                    <div>
+                        <h4>Our Vision</h4>
+                        <p>Set the global standard for ethical, intelligence-led enterprise digital strategy.</p>
+                    </div>
+                </div>
+                <div class="story-panel-row">
+                    <i class="fas fa-gem"></i>
+                    <div>
+                        <h4>Our Approach</h4>
+                        <p>Bespoke frameworks, direct executive access, and measurable board-level reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-item">
+                <h3>950+</h3>
+                <p>Enterprise Projects</p>
+            </div>
+            <div class="stat-item">
+                <h3>280+</h3>
+                <p>Global Partnerships</p>
+            </div>
+            <div class="stat-item">
+                <h3>20+</h3>
+                <p>Years Expertise</p>
+            </div>
+            <div class="stat-item">
+                <h3>$4.2B+</h3>
+                <p>Impact Generated</p>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <h2>The Values Behind <span style="color: var(--accent);">Every Engagement</span></h2>
+            <div class="why-choose-grid">
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-star"></i></div>
+                    <div class="why-content">
+                        <h3>Bespoke Strategy</h3>
+                        <p>Custom frameworks and dedicated executive partnerships tailored to your unique market objectives.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="why-content">
+                        <h3>Measurable Impact</h3>
+                        <p>Proven track record delivering billions in attributed revenue and market share expansion globally.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="why-content">
+                        <h3>Ethical Excellence</h3>
+                        <p>100% white-hat methodology protecting brand integrity with sustainable, long-term value creation.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="why-content">
+                        <h3>Executive Partnership</h3>
+                        <p>Direct C-suite access, quarterly board reporting, and complete strategic transparency throughout.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-globe"></i></div>
+                    <div class="why-content">
+                        <h3>Global Intelligence</h3>
+                        <p>Multi-market expertise across North America, Europe, Asia-Pacific with regional market mastery.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="why-content">
+                        <h3>Innovation Labs</h3>
+                        <p>Proprietary research, emerging intelligence, and forward-thinking strategies ahead of the curve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="label">Leadership</span>
+                <h2>The Team Behind <span class="highlight">Seovaro</span></h2>
+                <p>Direct access to senior strategists who bring two decades of enterprise search and growth expertise to every engagement.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">NM</div>
+                    <h3>Nadeem Mayo</h3>
+                    <span class="team-role">Global Director</span>
+                    <p>Leads Seovaro's enterprise strategy practice, overseeing client partnerships and global market expansion.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">SI</div>
+                    <h3>Strategic Intelligence</h3>
+                    <span class="team-role">Research &amp; Insights</span>
+                    <p>Drives the proprietary research and market intelligence behind every Seovaro engagement.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">CS</div>
+                    <h3>Client Success</h3>
+                    <span class="team-role">Executive Partnerships</span>
+                    <p>Ensures every client relationship delivers transparent reporting and measurable business outcomes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Work With <span class="highlight">Seovaro</span>?</h2>
+                <p>Let's discuss how strategic intelligence and enterprise-grade execution can drive measurable business impact and market leadership.</p>
+                <a href="https://wa.me/923074646927" class="btn-primary">Schedule Executive Session</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        © 2026 Seovaro. All Rights Reserved. | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms.html">Terms</a>
+    </footer>
+
+    <div class="floating-contact">
+        <div class="contact-options">
+            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button class="float-btn float-main" title="Contact Options">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+</body>
+</html>
