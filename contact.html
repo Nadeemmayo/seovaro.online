@@ -1,1 +1,767 @@
-4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Seovaro — Enterprise Digital Intelligence & Growth Strategy</title>
+    <meta name="description" content="Connect with Seovaro's executive team for enterprise SEO, digital strategy, and growth intelligence consultations." />
+    <link rel="canonical" href="https://seovaro.online/contact.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230d3b3a' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='45' font-weight='bold' fill='%23f4a583' text-anchor='middle'%3ESV%3C/text%3E%3C/svg%3E" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact Seovaro — Enterprise Growth Strategy" />
+    <meta property="og:url" content="https://seovaro.online/contact.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEOVARO"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SEOVARO');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #faf6f1;
+            color: #2c2c2c;
+            font-family: 'DM Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        :root {
+            --primary: #0d3b3a;
+            --primary-light: #1a5554;
+            --accent: #f4a583;
+            --accent-dark: #e8935c;
+            --secondary: #8a9b8f;
+            --light: #faf6f1;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        header {
+            background: var(--white);
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(13, 59, 58, 0.08);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 22px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-badge {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        nav {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+            transition: width 0.35s ease;
+        }
+
+        nav a.active::after,
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2.5px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #faf6f1 0%, #f5f0e8 50%, var(--light) 100%);
+            padding: 110px 50px 100px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(244, 165, 131, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 62px;
+            color: var(--primary);
+            margin-bottom: 22px;
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 .highlight {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: #6a6a6a;
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 100px 50px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 70px;
+            margin-bottom: 100px;
+        }
+
+        .contact-info h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 40px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 20px;
+            line-height: 1.25;
+            letter-spacing: -0.5px;
+        }
+
+        .contact-info > p {
+            font-size: 15px;
+            color: #6a6a6a;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .contact-method {
+            display: flex;
+            gap: 20px;
+            padding: 24px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .contact-method:last-of-type {
+            border-bottom: none;
+        }
+
+        .contact-method-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--white);
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .contact-method h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+
+        .contact-method a,
+        .contact-method p {
+            font-size: 13px;
+            color: #6a6a6a;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .contact-method a:hover {
+            color: var(--accent);
+        }
+
+        .contact-social {
+            margin-top: 40px;
+        }
+
+        .contact-social h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 18px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            background: var(--white);
+            border: 2px solid var(--primary);
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            color: var(--white);
+            border-color: var(--accent);
+        }
+
+        .contact-form-panel {
+            background: var(--white);
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            padding: 55px 50px;
+        }
+
+        .contact-form-panel h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 26px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .contact-form-panel > p {
+            font-size: 14px;
+            color: #6a6a6a;
+            margin-bottom: 34px;
+            font-weight: 300;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e5e5e5;
+            border-radius: 3px;
+            font-size: 14px;
+            font-family: 'DM Sans', sans-serif;
+            color: var(--dark);
+            background: var(--light);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            transition: all 0.3s ease;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
+        }
+
+        .why-choose {
+            background: linear-gradient(135deg, #f5f0e8 0%, var(--light) 100%);
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            padding: 80px 70px;
+            margin-bottom: 100px;
+        }
+
+        .why-choose h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 42px;
+            color: var(--primary);
+            margin-bottom: 55px;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+
+        .offices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+        }
+
+        .office-card {
+            background: var(--white);
+            padding: 34px 28px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .office-card h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 18px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .office-card p {
+            font-size: 13px;
+            color: #6a6a6a;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        footer {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 40px 50px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .floating-contact {
+            position: fixed;
+            right: 35px;
+            bottom: 35px;
+            z-index: 99;
+        }
+
+        .contact-options {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 15px;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floating-contact:hover .contact-options {
+            display: flex;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(244, 165, 131, 0.2);
+            border: none;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .float-whatsapp {
+            background: #25D366;
+        }
+
+        .float-email {
+            background: #EA4335;
+        }
+
+        .float-linkedin {
+            background: #0077B5;
+        }
+
+        .float-main {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            width: 65px;
+            height: 65px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .header-container {
+                padding: 16px 30px;
+            }
+
+            .hero {
+                padding: 70px 30px 60px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .container {
+                padding: 60px 30px;
+            }
+
+            .contact-form-panel {
+                padding: 40px 28px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .why-choose {
+                padding: 50px 30px;
+            }
+
+            .why-choose h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <div class="logo-badge">SV</div>
+                SEOVARO
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html" class="active">Contact</a>
+            </nav>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/923074646927" class="cta-btn">Consultation</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Let's Talk <span class="highlight">Strategy</span></h1>
+            <p>Reach out to discuss your market, your objectives, and how Seovaro's enterprise strategists can help you get there.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="contact-grid">
+            <div class="contact-info">
+                <h2>Direct Access to Our Executive Team</h2>
+                <p>Every enterprise engagement begins with a conversation. Reach out through whichever channel works best, and a member of our strategy team will respond within one business day.</p>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/923074646927">+92 307 464 6927</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:nadeemonlin@gmail.com">nadeemonlin@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon"><i class="fas fa-user-tie"></i></div>
+                    <div>
+                        <h4>Global Director</h4>
+                        <p>Nadeem Mayo</p>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Nadeem_seo" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://t.me/Nadeemmayos" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <h3>Request a Strategy Session</h3>
+                <p>Tell us a bit about your business and what you're looking to achieve.</p>
+                <form onsubmit="handleContact(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" placeholder="Enterprise Inc." required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Work Email</label>
+                            <input type="email" placeholder="jane@enterprise.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Area of Interest</label>
+                        <select required>
+                            <option value="">Select a service</option>
+                            <option>Enterprise SEO Strategy</option>
+                            <option>Strategic Link Architecture</option>
+                            <option>Content Intelligence</option>
+                            <option>Technical Precision</option>
+                            <option>Engagement Campaigns</option>
+                            <option>Brand Authority Building</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell us about your goals..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <h2>Global <span style="color: var(--accent);">Presence</span></h2>
+            <div class="offices-grid">
+                <div class="office-card">
+                    <h4>North America</h4>
+                    <p>Serving enterprise clients across the United States and Canada with dedicated regional strategists.</p>
+                </div>
+                <div class="office-card">
+                    <h4>Europe</h4>
+                    <p>Supporting multi-market growth across the UK, EU, and broader European enterprise landscape.</p>
+                </div>
+                <div class="office-card">
+                    <h4>Global Remote</h4>
+                    <p>Our team operates across time zones to keep executive communication fast and direct.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        © 2026 Seovaro. All Rights Reserved. | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms.html">Terms</a>
+    </footer>
+
+    <div class="floating-contact">
+        <div class="contact-options">
+            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button class="float-btn float-main" title="Contact Options">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <script>
+        function handleContact(e) {
+            e.preventDefault();
+            alert('Thank you. Your message has been received — our team will reach out shortly.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
