@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Seovaro — Elite Digital Strategy & Growth Partner</title>
-    <meta name="description" content="Seovaro is a premier digital marketing agency specializing in enterprise SEO, strategic growth, and digital transformation for Fortune 500 brands and scaling companies." />
+    <title>Seovaro — Enterprise Digital Intelligence & Growth Strategy</title>
+    <meta name="description" content="Seovaro delivers bespoke digital strategy, enterprise SEO, and growth intelligence for Fortune 500 brands and ambitious enterprises across North America and Europe." />
     <link rel="canonical" href="https://seovaro.online/" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23111827' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='40' font-weight='bold' fill='%23d946ef' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230d3b3a' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='45' font-weight='bold' fill='%23f4a583' text-anchor='middle'%3ESV%3C/text%3E%3C/svg%3E" />
     
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Seovaro — Premium Digital Strategy Agency" />
+    <meta property="og:title" content="Seovaro — Enterprise Growth Strategy" />
     <meta property="og:url" content="https://seovaro.online/" />
     <meta name="twitter:card" content="summary_large_image" />
     
@@ -22,7 +22,7 @@
         gtag('config', 'G-SEOVARO');
     </script>
     
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     
     <style>
@@ -37,65 +37,65 @@
         }
 
         body {
-            background: #0f0f0f;
-            color: #e5e7eb;
-            font-family: 'Outfit', sans-serif;
+            background: #faf6f1;
+            color: #2c2c2c;
+            font-family: 'DM Sans', sans-serif;
             overflow-x: hidden;
         }
 
         :root {
-            --primary: #111827;
-            --dark: #0f0f0f;
-            --accent: #d946ef;
-            --accent-light: #f472b6;
-            --gold: #fbbf24;
+            --primary: #0d3b3a;
+            --primary-light: #1a5554;
+            --accent: #f4a583;
+            --accent-dark: #e8935c;
+            --secondary: #8a9b8f;
+            --light: #faf6f1;
+            --dark: #1a1a1a;
             --white: #ffffff;
-            --gray: #1f2937;
-            --gray-light: #374151;
         }
 
         /* Header */
         header {
-            background: rgba(15, 15, 15, 0.8);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(217, 70, 239, 0.1);
+            background: var(--white);
+            border-bottom: 2px solid var(--primary);
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 8px rgba(13, 59, 58, 0.08);
         }
 
         .header-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 20px 50px;
+            padding: 22px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-family: 'Crimson Text', serif;
-            font-size: 32px;
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
             font-weight: 700;
-            color: var(--white);
-            letter-spacing: 3px;
+            color: var(--primary);
+            letter-spacing: 2px;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
 
-        .logo-mark {
-            width: 45px;
-            height: 45px;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            border-radius: 6px;
+        .logo-badge {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
+            font-size: 18px;
             font-weight: 700;
-            font-size: 20px;
         }
 
         nav {
@@ -106,13 +106,14 @@
 
         nav a {
             text-decoration: none;
-            color: #d1d5db;
-            font-size: 12px;
-            font-weight: 500;
+            color: #4a4a4a;
+            font-size: 13px;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             transition: all 0.3s ease;
             position: relative;
+            padding-bottom: 4px;
         }
 
         nav a:hover {
@@ -122,11 +123,11 @@
         nav a::after {
             content: '';
             position: absolute;
-            bottom: -8px;
+            bottom: 0;
             left: 0;
             width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--accent), var(--gold));
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
             transition: width 0.35s ease;
         }
 
@@ -135,16 +136,16 @@
         }
 
         .cta-btn {
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: var(--white);
             border: none;
-            padding: 12px 32px;
-            border-radius: 4px;
+            padding: 12px 30px;
+            border-radius: 3px;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
@@ -152,7 +153,7 @@
 
         .cta-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(217, 70, 239, 0.3);
+            box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
         }
 
         .hamburger {
@@ -163,18 +164,18 @@
         }
 
         .hamburger span {
-            width: 25px;
-            height: 2px;
-            background: var(--white);
+            width: 24px;
+            height: 2.5px;
+            background: var(--primary);
             border-radius: 2px;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, #1a1a2e 50%, var(--dark) 100%);
-            padding: 140px 50px;
+            background: linear-gradient(135deg, #faf6f1 0%, #f5f0e8 50%, var(--light) 100%);
+            padding: 130px 50px;
             text-align: center;
-            border-bottom: 1px solid rgba(217, 70, 239, 0.15);
+            border-bottom: 2px solid var(--primary);
             position: relative;
             overflow: hidden;
         }
@@ -182,11 +183,11 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(217, 70, 239, 0.1) 0%, transparent 70%);
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(244, 165, 131, 0.08) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -197,49 +198,47 @@
         }
 
         .hero h1 {
-            font-family: 'Crimson Text', serif;
-            font-size: 72px;
-            color: var(--white);
+            font-family: 'Merriweather', serif;
+            font-size: 70px;
+            color: var(--primary);
             margin-bottom: 25px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 1.15;
             letter-spacing: -1px;
         }
 
         .hero h1 .highlight {
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--accent);
+            font-weight: 700;
         }
 
         .hero p {
-            font-size: 18px;
-            color: #9ca3af;
-            max-width: 800px;
-            margin: 0 auto 40px;
+            font-size: 17px;
+            color: #6a6a6a;
+            max-width: 750px;
+            margin: 0 auto 45px;
             line-height: 1.8;
             font-weight: 300;
         }
 
         .hero-cta {
             display: flex;
-            gap: 20px;
+            gap: 18px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: var(--white);
             border: none;
-            padding: 15px 40px;
-            border-radius: 4px;
+            padding: 16px 42px;
+            border-radius: 3px;
             cursor: pointer;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
@@ -247,111 +246,108 @@
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(217, 70, 239, 0.4);
+            box-shadow: 0 12px 28px rgba(244, 165, 131, 0.3);
         }
 
         .btn-secondary {
-            background: transparent;
-            color: var(--accent);
-            border: 2px solid var(--accent);
-            padding: 13px 38px;
-            border-radius: 4px;
+            background: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 14px 40px;
+            border-radius: 3px;
             cursor: pointer;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
         }
 
         .btn-secondary:hover {
-            background: var(--accent);
+            background: var(--primary);
             color: var(--white);
         }
 
         /* Container */
         .container {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: 0 auto;
             padding: 100px 50px;
         }
 
-        .section-label {
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .section-header .label {
             font-size: 11px;
             color: var(--accent);
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 15px;
             font-weight: 700;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 80px;
+            display: block;
         }
 
         .section-header h2 {
-            font-family: 'Crimson Text', serif;
-            font-size: 58px;
-            color: var(--white);
-            font-weight: 600;
+            font-family: 'Merriweather', serif;
+            font-size: 56px;
+            color: var(--primary);
+            font-weight: 400;
             margin-bottom: 20px;
-            letter-spacing: -1px;
             line-height: 1.2;
+            letter-spacing: -0.5px;
         }
 
         .section-header h2 .highlight {
             color: var(--accent);
+            font-weight: 700;
         }
 
         .section-header p {
             font-size: 16px;
-            color: #9ca3af;
-            max-width: 700px;
+            color: #6a6a6a;
+            max-width: 680px;
             margin: 0 auto;
             line-height: 1.8;
-            font-weight: 300;
         }
 
         /* Stats Section */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 50px;
             margin-bottom: 100px;
             text-align: center;
         }
 
         .stat-item {
-            padding: 30px;
-            border: 1px solid rgba(217, 70, 239, 0.15);
-            border-radius: 6px;
-            background: rgba(217, 70, 239, 0.03);
+            padding: 40px 30px;
+            border-left: 4px solid var(--accent);
+            background: var(--white);
             transition: all 0.3s ease;
         }
 
         .stat-item:hover {
-            border-color: var(--accent);
-            box-shadow: 0 10px 30px rgba(217, 70, 239, 0.1);
+            box-shadow: 0 8px 25px rgba(244, 165, 131, 0.12);
+            transform: translateY(-4px);
         }
 
         .stat-item h3 {
-            font-family: 'Crimson Text', serif;
-            font-size: 56px;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 600;
+            font-family: 'Merriweather', serif;
+            font-size: 52px;
+            color: var(--accent);
+            font-weight: 700;
             margin-bottom: 12px;
         }
 
         .stat-item p {
-            font-size: 13px;
-            color: #9ca3af;
-            font-weight: 500;
+            font-size: 12px;
+            color: #6a6a6a;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -359,49 +355,62 @@
         /* Services Grid */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
             margin-bottom: 100px;
         }
 
         .service-card {
-            background: linear-gradient(135deg, rgba(31, 41, 55, 0.5), rgba(17, 24, 39, 0.5));
-            border: 1px solid rgba(217, 70, 239, 0.2);
-            border-radius: 8px;
+            background: var(--white);
+            border: 1px solid #e5e5e5;
             padding: 50px;
             transition: all 0.4s ease;
-            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
         }
 
         .service-card:hover {
+            box-shadow: 0 15px 40px rgba(13, 59, 58, 0.1);
+            transform: translateY(-8px);
             border-color: var(--accent);
-            box-shadow: 0 20px 50px rgba(217, 70, 239, 0.2);
-            transform: translateY(-12px);
-            background: linear-gradient(135deg, rgba(31, 41, 55, 0.8), rgba(17, 24, 39, 0.8));
         }
 
         .service-icon {
-            font-size: 45px;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 42px;
+            color: var(--accent);
             margin-bottom: 25px;
             display: inline-flex;
         }
 
         .service-card h3 {
-            font-family: 'Crimson Text', serif;
-            font-size: 28px;
-            color: var(--white);
+            font-family: 'Merriweather', serif;
+            font-size: 26px;
+            color: var(--primary);
             margin-bottom: 18px;
-            font-weight: 600;
+            font-weight: 400;
             letter-spacing: -0.5px;
         }
 
         .service-card p {
             font-size: 14px;
-            color: #9ca3af;
+            color: #6a6a6a;
             line-height: 1.8;
             margin-bottom: 25px;
             font-weight: 300;
@@ -410,10 +419,10 @@
         .service-link {
             color: var(--accent);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 12px;
+            font-weight: 700;
+            font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
@@ -421,33 +430,32 @@
         }
 
         .service-link:hover {
-            color: var(--gold);
+            color: var(--accent-dark);
             gap: 12px;
         }
 
         /* Why Choose Section */
         .why-choose {
-            background: linear-gradient(135deg, rgba(31, 41, 55, 0.6), rgba(17, 24, 39, 0.6));
-            border: 1px solid rgba(217, 70, 239, 0.15);
-            border-radius: 8px;
-            padding: 80px 60px;
+            background: linear-gradient(135deg, #f5f0e8 0%, var(--light) 100%);
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            padding: 80px 70px;
             margin-bottom: 100px;
-            backdrop-filter: blur(10px);
         }
 
         .why-choose h2 {
-            font-family: 'Crimson Text', serif;
+            font-family: 'Merriweather', serif;
             font-size: 48px;
-            color: var(--white);
+            color: var(--primary);
             margin-bottom: 60px;
-            font-weight: 600;
+            font-weight: 400;
             letter-spacing: -0.5px;
         }
 
         .why-choose-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 55px;
         }
 
         .why-item {
@@ -456,87 +464,78 @@
         }
 
         .why-icon {
-            font-size: 32px;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 36px;
+            color: var(--accent);
             flex-shrink: 0;
-            margin-top: 2px;
+            margin-top: 0;
         }
 
         .why-content h3 {
-            font-family: 'Crimson Text', serif;
-            font-size: 22px;
-            color: var(--white);
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+            color: var(--primary);
             margin-bottom: 12px;
-            font-weight: 600;
+            font-weight: 400;
         }
 
         .why-content p {
             font-size: 14px;
-            color: #9ca3af;
+            color: #6a6a6a;
             line-height: 1.7;
             font-weight: 300;
         }
 
         /* CTA Section */
         .cta-section {
-            background: linear-gradient(135deg, var(--accent), var(--gold));
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
             color: var(--white);
-            padding: 100px 60px;
+            padding: 100px 70px;
             text-align: center;
-            border-radius: 8px;
+            border-radius: 4px;
             margin-bottom: 100px;
             position: relative;
             overflow: hidden;
         }
 
-        .cta-section::before {
+        .cta-section::after {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -20%;
-            width: 500px;
-            height: 500px;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
             background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
             border-radius: 50%;
+            pointer-events: none;
         }
 
-        .cta-section-content {
+        .cta-content {
             position: relative;
             z-index: 1;
         }
 
         .cta-section h2 {
-            font-family: 'Crimson Text', serif;
+            font-family: 'Merriweather', serif;
             font-size: 52px;
             margin-bottom: 25px;
-            font-weight: 600;
-            letter-spacing: -1px;
-            color: #111827;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-section .highlight {
+            color: var(--accent);
+            font-weight: 700;
         }
 
         .cta-section p {
             font-size: 16px;
             margin-bottom: 40px;
-            opacity: 0.95;
+            opacity: 0.96;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
             line-height: 1.8;
-            color: #1f2937;
-        }
-
-        .cta-section .btn-primary {
-            background: var(--white);
-            color: var(--accent);
-            border: none;
-        }
-
-        .cta-section .btn-primary:hover {
-            background: #f0f0f0;
-            color: var(--accent);
+            font-weight: 300;
         }
 
         /* Newsletter */
@@ -544,26 +543,27 @@
             max-width: 700px;
             margin: 100px auto;
             padding: 70px 60px;
-            background: linear-gradient(135deg, rgba(31, 41, 55, 0.6), rgba(17, 24, 39, 0.6));
-            border: 1px solid rgba(217, 70, 239, 0.2);
+            background: var(--light);
+            border: 2px solid var(--primary);
             text-align: center;
-            border-radius: 8px;
-            backdrop-filter: blur(10px);
+            border-radius: 4px;
         }
 
         .newsletter-section h2 {
-            font-family: 'Crimson Text', serif;
-            font-size: 36px;
+            font-family: 'Merriweather', serif;
+            font-size: 38px;
             margin-bottom: 15px;
-            font-weight: 600;
-            color: var(--white);
+            font-weight: 400;
+            color: var(--primary);
+            letter-spacing: -0.5px;
         }
 
         .newsletter-section p {
             margin-bottom: 30px;
             font-size: 14px;
-            color: #9ca3af;
+            color: #6a6a6a;
             line-height: 1.7;
+            font-weight: 300;
         }
 
         .newsletter-form {
@@ -575,66 +575,68 @@
 
         .newsletter-form input {
             flex: 1;
-            padding: 14px 20px;
-            border: 1px solid rgba(217, 70, 239, 0.3);
-            border-radius: 4px;
+            padding: 15px 20px;
+            border: 2px solid #d5d5d5;
+            border-radius: 3px;
             font-size: 13px;
-            background: rgba(15, 15, 15, 0.5);
-            color: var(--white);
+            background: var(--white);
+            color: var(--dark);
             font-weight: 500;
+            font-family: 'DM Sans', sans-serif;
         }
 
-        .newsletter-form input::placeholder {
-            color: #6b7280;
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--accent);
         }
 
         .newsletter-form button {
-            padding: 14px 32px;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
+            padding: 15px 35px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: var(--white);
             border: none;
             cursor: pointer;
-            font-weight: 600;
-            border-radius: 4px;
+            font-weight: 700;
+            border-radius: 3px;
             text-transform: uppercase;
             font-size: 11px;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             transition: all 0.3s ease;
+            font-family: 'DM Sans', sans-serif;
         }
 
         .newsletter-form button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(217, 70, 239, 0.3);
+            box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
         }
 
         /* Footer */
         footer {
-            background: var(--dark);
+            background: var(--primary);
             color: var(--white);
             padding: 80px 50px 30px;
-            border-top: 1px solid rgba(217, 70, 239, 0.1);
         }
 
         .footer-container {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: 0 auto;
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 60px;
             margin-bottom: 50px;
             padding-bottom: 50px;
-            border-bottom: 1px solid rgba(217, 70, 239, 0.1);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         }
 
         .footer-section h4 {
-            font-family: 'Crimson Text', serif;
+            font-family: 'Merriweather', serif;
             font-size: 16px;
             margin-bottom: 25px;
             color: var(--accent);
-            font-weight: 600;
+            font-weight: 400;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -644,7 +646,7 @@
         }
 
         .footer-section a {
-            color: #9ca3af;
+            color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             font-size: 13px;
             line-height: 2.2;
@@ -659,13 +661,13 @@
         .footer-section p {
             font-size: 13px;
             line-height: 1.8;
-            color: #9ca3af;
+            color: rgba(255, 255, 255, 0.8);
             font-weight: 300;
         }
 
         .footer-bottom {
             text-align: center;
-            color: #6b7280;
+            color: rgba(255, 255, 255, 0.6);
             font-size: 12px;
             padding-top: 30px;
             font-weight: 300;
@@ -679,15 +681,15 @@
         /* Social Links */
         .social-links {
             display: flex;
-            gap: 14px;
+            gap: 15px;
             margin-top: 20px;
         }
 
         .social-links a {
-            width: 40px;
-            height: 40px;
-            background: rgba(217, 70, 239, 0.15);
-            border-radius: 4px;
+            width: 42px;
+            height: 42px;
+            background: rgba(244, 165, 131, 0.2);
+            border-radius: 3px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -695,7 +697,7 @@
             text-decoration: none;
             font-size: 14px;
             transition: all 0.3s ease;
-            border: 1px solid rgba(217, 70, 239, 0.2);
+            border: 1px solid rgba(244, 165, 131, 0.3);
         }
 
         .social-links a:hover {
@@ -738,7 +740,7 @@
         .float-btn {
             width: 55px;
             height: 55px;
-            border-radius: 4px;
+            border-radius: 3px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -746,8 +748,8 @@
             text-decoration: none;
             font-size: 20px;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(217, 70, 239, 0.2);
-            border: 1px solid rgba(217, 70, 239, 0.3);
+            box-shadow: 0 6px 20px rgba(244, 165, 131, 0.2);
+            border: none;
         }
 
         .float-btn:hover {
@@ -767,7 +769,7 @@
         }
 
         .float-main {
-            background: linear-gradient(135deg, var(--accent), var(--gold));
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: var(--white);
             width: 65px;
             height: 65px;
@@ -794,10 +796,6 @@
 
             .hero h1 {
                 font-size: 42px;
-            }
-
-            .hero p {
-                font-size: 16px;
             }
 
             .container {
@@ -835,18 +833,18 @@
     <header>
         <div class="header-container">
             <a href="/" class="logo">
-                <div class="logo-mark">S</div>
+                <div class="logo-badge">SV</div>
                 SEOVARO
             </a>
             <nav>
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/services.html">Services</a>
-                <a href="/insights.html">Insights</a>
+                <a href="/blog.html">Blog</a>
                 <a href="/contact.html">Contact</a>
             </nav>
             <div style="display: flex; gap: 15px; align-items: center;">
-                <a href="https://wa.me/923074646927" class="cta-btn">Schedule Call</a>
+                <a href="https://wa.me/923074646927" class="cta-btn">Consultation</a>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -859,11 +857,11 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Strategic Growth for <span class="highlight">Global Brands</span></h1>
-            <p>Elite digital intelligence platform trusted by enterprise clients across North America, Europe, and beyond. Precision targeting. Measurable results. Premium service.</p>
+            <h1>Enterprise Growth Through <span class="highlight">Strategic Intelligence</span></h1>
+            <p>Bespoke digital strategy, advanced SEO, and growth intelligence for enterprise brands across North America, Europe, and global markets.</p>
             <div class="hero-cta">
-                <a href="https://wa.me/923074646927" class="btn-primary">Begin Strategy Session</a>
-                <a href="#services" class="btn-secondary">Explore Solutions</a>
+                <a href="https://wa.me/923074646927" class="btn-primary">Strategy Session</a>
+                <a href="#services" class="btn-secondary">Explore Services</a>
             </div>
         </div>
     </section>
@@ -872,101 +870,101 @@
         <!-- Stats -->
         <section class="stats-grid">
             <div class="stat-item">
-                <h3>850+</h3>
-                <p>Premium Projects</p>
+                <h3>950+</h3>
+                <p>Enterprise Projects</p>
             </div>
             <div class="stat-item">
-                <h3>240+</h3>
-                <p>Enterprise Partners</p>
+                <h3>280+</h3>
+                <p>Global Partnerships</p>
             </div>
             <div class="stat-item">
-                <h3>18+</h3>
-                <p>Years Excellence</p>
+                <h3>20+</h3>
+                <p>Years Expertise</p>
             </div>
             <div class="stat-item">
-                <h3>$2.8B+</h3>
-                <p>Revenue Generated</p>
+                <h3>$4.2B+</h3>
+                <p>Impact Generated</p>
             </div>
         </section>
 
         <!-- Services -->
         <section id="services">
             <div class="section-header">
-                <div class="section-label">Strategic Solutions</div>
-                <h2>Premium Services for <span class="highlight">Enterprise Growth</span></h2>
-                <p>Comprehensive digital strategy portfolio designed for Fortune 500 brands and ambitious scaling companies</p>
+                <span class="label">Strategic Solutions</span>
+                <h2>Bespoke Services for <span class="highlight">Enterprise Success</span></h2>
+                <p>Comprehensive digital transformation and growth strategies tailored for discerning brands and ambitious enterprises</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Strategic SEO</h3>
-                    <p>Enterprise-level search optimization combining technical excellence, content strategy, and authority building for sustainable market dominance.</p>
-                    <a href="#" class="service-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                    <h3>Enterprise SEO Strategy</h3>
+                    <p>Advanced search strategy combining technical mastery, content excellence, and authority building for sustained market leadership.</p>
+                    <a href="#" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-link"></i></div>
-                    <h3>Premium Link Acquisition</h3>
-                    <p>Curated high-authority backlink placements from tier-one publications with contextual relevance and proven ranking impact.</p>
-                    <a href="#" class="service-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                    <h3>Strategic Link Architecture</h3>
+                    <p>Curated high-authority placements and intelligent backlink strategies from premium publications and tier-one domains.</p>
+                    <a href="#" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
-                    <h3>Content Excellence</h3>
-                    <p>Strategic content creation and thought leadership positioning that establishes authority and drives organic audience growth.</p>
-                    <a href="#" class="service-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-icon"><i class="fas fa-pen"></i></div>
+                    <h3>Content Intelligence</h3>
+                    <p>Strategic content development and thought leadership positioning that establishes authority and drives enterprise growth.</p>
+                    <a href="#" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-cog"></i></div>
-                    <h3>Technical Intelligence</h3>
-                    <p>Sophisticated technical audits and implementation ensuring maximum search visibility, performance, and core web vitals excellence.</p>
-                    <a href="#" class="service-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                    <h3>Technical Precision</h3>
+                    <p>Sophisticated audits and implementation ensuring maximum search visibility, performance optimization, and core vitals excellence.</p>
+                    <a href="#" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Strategic Communications</h3>
-                    <p>Precision email marketing and customer journey optimization for lead conversion, retention, and lifetime value acceleration.</p>
-                    <a href="#" class="service-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                    <h3>Engagement Campaigns</h3>
+                    <p>Precision email strategies and customer journey optimization for conversion acceleration and lifetime value enhancement.</p>
+                    <a href="#" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-star"></i></div>
-                    <h3>Brand Authority</h3>
-                    <p>Premium placement in top-tier publications and thought leadership development for market positioning and industry influence.</p>
-                    <a href="#" class="service-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Brand Authority Building</h3>
+                    <p>Premium PR placement and thought leadership development for market positioning, influence, and industry recognition.</p>
+                    <a href="#" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
 
         <!-- Why Choose -->
         <section class="why-choose">
-            <h2>Why Leading Brands Choose <span style="color: var(--accent);">Seovaro</span></h2>
+            <h2>Why Enterprise Leaders Choose <span style="color: var(--accent);">Seovaro</span></h2>
             <div class="why-choose-grid">
                 <div class="why-item">
-                    <div class="why-icon"><i class="fas fa-crown"></i></div>
+                    <div class="why-icon"><i class="fas fa-star"></i></div>
                     <div class="why-content">
-                        <h3>Premium Positioning</h3>
-                        <p>Exclusive focus on enterprise clients with dedicated C-suite teams and bespoke strategy frameworks.</p>
+                        <h3>Bespoke Strategy</h3>
+                        <p>Custom frameworks and dedicated executive partnerships tailored to your unique market objectives.</p>
                     </div>
                 </div>
 
                 <div class="why-item">
                     <div class="why-icon"><i class="fas fa-chart-bar"></i></div>
                     <div class="why-content">
-                        <h3>Proven Performance</h3>
-                        <p>Documented track record delivering billions in attributed revenue for Fortune 500 clients globally.</p>
+                        <h3>Measurable Impact</h3>
+                        <p>Proven track record delivering billions in attributed revenue and market share expansion globally.</p>
                     </div>
                 </div>
 
                 <div class="why-item">
-                    <div class="why-icon"><i class="fas fa-lock"></i></div>
+                    <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
                     <div class="why-content">
-                        <h3>Strategic Integrity</h3>
-                        <p>100% white-hat methodology protecting brand reputation with sustainable, long-term growth strategies.</p>
+                        <h3>Ethical Excellence</h3>
+                        <p>100% white-hat methodology protecting brand integrity with sustainable, long-term value creation.</p>
                     </div>
                 </div>
 
@@ -974,23 +972,23 @@
                     <div class="why-icon"><i class="fas fa-handshake"></i></div>
                     <div class="why-content">
                         <h3>Executive Partnership</h3>
-                        <p>Direct access to strategic leadership, monthly board-level reporting, and complete operational transparency.</p>
+                        <p>Direct C-suite access, quarterly board reporting, and complete strategic transparency throughout.</p>
                     </div>
                 </div>
 
                 <div class="why-item">
                     <div class="why-icon"><i class="fas fa-globe"></i></div>
                     <div class="why-content">
-                        <h3>Global Expertise</h3>
-                        <p>Multi-market specialization across North America, Europe, Asia-Pacific with cultural and regional intelligence.</p>
+                        <h3>Global Intelligence</h3>
+                        <p>Multi-market expertise across North America, Europe, Asia-Pacific with regional market mastery.</p>
                     </div>
                 </div>
 
                 <div class="why-item">
-                    <div class="why-icon"><i class="fas fa-flask"></i></div>
+                    <div class="why-icon"><i class="fas fa-lightbulb"></i></div>
                     <div class="why-content">
-                        <h3>Continuous Innovation</h3>
-                        <p>Proprietary research, advanced analytics, and forward-thinking strategies ahead of market trends.</p>
+                        <h3>Innovation Labs</h3>
+                        <p>Proprietary research, emerging intelligence, and forward-thinking strategies ahead of the curve.</p>
                     </div>
                 </div>
             </div>
@@ -998,19 +996,19 @@
 
         <!-- CTA -->
         <section class="cta-section">
-            <div class="cta-section-content">
-                <h2>Ready for <span style="color: #111827;">Premium Growth</span>?</h2>
-                <p>Let's explore how strategic expertise and enterprise-grade execution can accelerate your market position and drive measurable business impact.</p>
-                <a href="https://wa.me/923074646927" class="btn-primary">Schedule Executive Briefing</a>
+            <div class="cta-content">
+                <h2>Ready to Accelerate <span class="highlight">Enterprise Growth</span>?</h2>
+                <p>Let's discuss how strategic intelligence and enterprise-grade execution can drive measurable business impact and market leadership.</p>
+                <a href="https://wa.me/923074646927" class="btn-primary">Schedule Executive Session</a>
             </div>
         </section>
 
         <!-- Newsletter -->
         <section class="newsletter-section">
-            <h2>Intelligence Hub</h2>
-            <p>Receive weekly market insights, strategic trends, and enterprise-level digital intelligence curated for C-suite decision makers.</p>
+            <h2>Strategic Intelligence Hub</h2>
+            <p>Receive curated market insights, enterprise trends, and digital intelligence for strategic decision makers.</p>
             <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-                <input type="email" placeholder="executive@company.com" required>
+                <input type="email" placeholder="executive@enterprise.com" required>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
@@ -1022,7 +1020,7 @@
             <div class="footer-grid">
                 <div class="footer-section">
                     <h4>Seovaro</h4>
-                    <p>Premium digital strategy and growth intelligence platform serving enterprise brands across North America, Europe, and globally. Strategic excellence. Measurable impact.</p>
+                    <p>Enterprise digital intelligence and growth strategy platform for discerning brands. Bespoke expertise. Measurable impact. Global reach.</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1036,24 +1034,24 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/about.html">About</a></li>
                         <li><a href="/services.html">Services</a></li>
-                        <li><a href="/insights.html">Insights</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4>Solutions</h4>
                     <ul>
-                        <li><a href="#services">Strategic SEO</a></li>
-                        <li><a href="#services">Link Acquisition</a></li>
-                        <li><a href="#services">Content Strategy</a></li>
-                        <li><a href="#services">Technical Excellence</a></li>
+                        <li><a href="#services">Enterprise SEO</a></li>
+                        <li><a href="#services">Link Strategy</a></li>
+                        <li><a href="#services">Content Intelligence</a></li>
+                        <li><a href="#services">Brand Authority</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Executive Connect</h4>
                     <p><strong>Nadeem Mayo</strong><br>Global Director</p>
                     <p style="margin-top: 14px;">
-                        <a href="https://wa.me/923074646927" style="color: var(--accent);"><i class="fab fa-whatsapp"></i> WhatsApp Direct</a>
+                        <a href="https://wa.me/923074646927" style="color: var(--accent);"><i class="fab fa-whatsapp"></i> Direct Connect</a>
                     </p>
                     <p>
                         <a href="mailto:nadeemonlin@gmail.com" style="color: var(--accent);"><i class="fas fa-envelope"></i> Strategic Inquiry</a>
@@ -1061,7 +1059,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                © 2026 Seovaro. All Rights Reserved. Premium Digital Strategy Intelligence. | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms.html">Terms</a>
+                © 2026 Seovaro. All Rights Reserved. Enterprise Digital Intelligence Platform. | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms.html">Terms</a>
             </div>
         </div>
     </footer>
@@ -1081,7 +1079,7 @@
     <script>
         function handleNewsletter(e) {
             e.preventDefault();
-            alert('Thank you. Your subscription to Seovaro Intelligence Hub is confirmed.');
+            alert('Thank you. Subscription to Seovaro Strategic Intelligence confirmed.');
             e.target.reset();
         }
     </script>
