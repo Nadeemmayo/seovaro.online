@@ -1,0 +1,10 @@
+title: Seovaro
+url: "https://seovaro.online"
+baseurl: ""
+
+markdown: kramdown
+
+permalink: /blog/:title/
+
+exclude:
+  - README.md
