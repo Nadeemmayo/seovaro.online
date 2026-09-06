@@ -26,7 +26,7 @@ permalink: /blog.html
         gtag('config', 'G-SEOVARO');
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <style>
@@ -287,6 +287,13 @@ permalink: /blog.html
             justify-content: center;
             min-height: 340px;
             position: relative;
+            overflow: hidden;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .featured-image i {
@@ -383,6 +390,13 @@ permalink: /blog.html
             align-items: center;
             justify-content: center;
             border-bottom: 1px solid #e5e5e5;
+            overflow: hidden;
+        }
+
+        .post-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .post-thumb i {
@@ -413,6 +427,13 @@ permalink: /blog.html
             line-height: 1.75;
             margin-bottom: 20px;
             font-weight: 300;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 80px 40px;
+            color: #888;
+            font-size: 16px;
         }
 
         .newsletter-section {
@@ -731,19 +752,25 @@ permalink: /blog.html
     </section>
 
     <div class="container">
+
+        {% if site.posts.size > 0 %}
+        {% assign featured = site.posts.first %}
         <article class="featured-post">
             <div class="featured-image">
+                {% if featured.thumbnail %}
+                <img src="{{ featured.thumbnail | relative_url }}" alt="{{ featured.thumbnail_alt | default: featured.title | escape }}">
+                {% else %}
                 <i class="fas fa-chart-line"></i>
+                {% endif %}
             </div>
             <div class="featured-body">
-                <span class="post-tag">Featured · Enterprise SEO</span>
-                <h3>How Enterprise Brands Are Rebuilding Search Strategy for 2026</h3>
+                <span class="post-tag">{{ featured.category | default: "Featured" }}</span>
+                <h3>{{ featured.title | escape }}</h3>
                 <div class="post-meta">
-                    <span><i class="fas fa-calendar"></i> August 2026</span>
-                    <span><i class="fas fa-clock"></i> 8 min read</span>
+                    <span><i class="fas fa-calendar"></i> {{ featured.date | date: "%B %Y" }}</span>
                 </div>
-                <p>A look at how leading enterprise brands are adapting their search strategies to answer-driven discovery, and what that means for technical architecture and content investment.</p>
-                <a href="#" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                <p>{{ featured.description | default: featured.excerpt | strip_html | truncate: 180 }}</p>
+                <a href="{{ featured.url | relative_url }}" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
             </div>
         </article>
 
@@ -755,67 +782,30 @@ permalink: /blog.html
             </div>
 
             <div class="blog-grid">
+                {% for post in site.posts offset: 1 %}
                 <div class="post-card">
-                    <div class="post-thumb"><i class="fas fa-link"></i></div>
+                    <div class="post-thumb">
+                        {% if post.thumbnail %}
+                        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.thumbnail_alt | default: post.title | escape }}">
+                        {% else %}
+                        <i class="fas fa-pen"></i>
+                        {% endif %}
+                    </div>
                     <div class="post-card-body">
-                        <span class="post-tag">Link Strategy</span>
-                        <h3>Building Link Authority Without Sacrificing Brand Safety</h3>
-                        <p>Why enterprise link strategy has to weigh editorial fit as heavily as domain authority.</p>
-                        <a href="#" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        <span class="post-tag">{{ post.category | default: "Insights" }}</span>
+                        <h3>{{ post.title | escape }}</h3>
+                        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 130 }}</p>
+                        <a href="{{ post.url | relative_url }}" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <div class="post-card">
-                    <div class="post-thumb"><i class="fas fa-cog"></i></div>
-                    <div class="post-card-body">
-                        <span class="post-tag">Technical SEO</span>
-                        <h3>Core Web Vitals at Enterprise Scale: What Actually Moves the Needle</h3>
-                        <p>Lessons from large-scale platform migrations and what enterprise teams get wrong.</p>
-                        <a href="#" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="post-card">
-                    <div class="post-thumb"><i class="fas fa-pen"></i></div>
-                    <div class="post-card-body">
-                        <span class="post-tag">Content Intelligence</span>
-                        <h3>Thought Leadership Content That Actually Drives Pipeline</h3>
-                        <p>A framework for aligning executive content with the questions buyers are actually asking.</p>
-                        <a href="#" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="post-card">
-                    <div class="post-thumb"><i class="fas fa-globe"></i></div>
-                    <div class="post-card-body">
-                        <span class="post-tag">Global Markets</span>
-                        <h3>International SEO: Structuring for Multi-Market Growth</h3>
-                        <p>How to architect a global site so regional teams can move fast without fragmenting authority.</p>
-                        <a href="#" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="post-card">
-                    <div class="post-thumb"><i class="fas fa-envelope"></i></div>
-                    <div class="post-card-body">
-                        <span class="post-tag">Engagement</span>
-                        <h3>Lifecycle Email Strategy for Enterprise Sales Cycles</h3>
-                        <p>Adapting nurture sequences to long, multi-stakeholder enterprise buying journeys.</p>
-                        <a href="#" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="post-card">
-                    <div class="post-thumb"><i class="fas fa-crown"></i></div>
-                    <div class="post-card-body">
-                        <span class="post-tag">Brand Authority</span>
-                        <h3>Turning Executive Visibility Into a Measurable Growth Channel</h3>
-                        <p>Why PR and thought leadership belong in the same strategy as SEO and content.</p>
-                        <a href="#" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
+        {% else %}
+        <div class="empty-state">
+            <p>No articles published yet. Check back soon.</p>
+        </div>
+        {% endif %}
 
         <section class="newsletter-section">
             <h2>Strategic Intelligence Hub</h2>
