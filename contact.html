@@ -426,6 +426,30 @@
             box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
         }
 
+        .form-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .form-status {
+            margin-top: 16px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            display: none;
+        }
+
+        .form-status.success {
+            display: block;
+            color: #1a5554;
+        }
+
+        .form-status.error {
+            display: block;
+            color: #c0392b;
+        }
+
         .why-choose {
             background: linear-gradient(135deg, #f5f0e8 0%, var(--light) 100%);
             border: 2px solid var(--primary);
@@ -680,30 +704,30 @@
             <div class="contact-form-panel">
                 <h3>Request a Strategy Session</h3>
                 <p>Tell us a bit about your business and what you're looking to achieve.</p>
-                <form onsubmit="handleContact(event)">
+                <form id="contactForm" onsubmit="handleContact(event)">
                     <div class="form-row">
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Jane Doe" required>
+                            <input type="text" name="name" placeholder="Jane Doe" required>
                         </div>
                         <div class="form-group">
                             <label>Company</label>
-                            <input type="text" placeholder="Enterprise Inc." required>
+                            <input type="text" name="company" placeholder="Enterprise Inc." required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label>Work Email</label>
-                            <input type="email" placeholder="jane@enterprise.com" required>
+                            <input type="email" name="email" placeholder="jane@enterprise.com" required>
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="tel" placeholder="+1 (555) 000-0000">
+                            <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Area of Interest</label>
-                        <select required>
+                        <select name="area_of_interest" required>
                             <option value="">Select a service</option>
                             <option>Enterprise SEO Strategy</option>
                             <option>Strategic Link Architecture</option>
@@ -715,9 +739,17 @@
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea placeholder="Tell us about your goals..." required></textarea>
+                        <textarea name="message" placeholder="Tell us about your goals..." required></textarea>
                     </div>
-                    <button type="submit" class="form-submit">Send Message</button>
+
+                    <!-- FormSubmit.co config fields (hidden) -->
+                    <input type="hidden" name="_subject" value="New Enquiry — Seovaro Contact Form">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
                 </form>
             </div>
         </section>
@@ -759,8 +791,37 @@
     <script>
         function handleContact(e) {
             e.preventDefault();
-            alert('Thank you. Your message has been received — our team will reach out shortly.');
-            e.target.reset();
+
+            const form = e.target;
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('formStatus');
+
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+            status.className = 'form-status';
+            status.textContent = '';
+
+            const formData = new FormData(form);
+
+            fetch('https://formsubmit.co/ajax/nadeemonlin@gmail.com', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: formData
+            })
+            .then(res => res.json())
+            .then(() => {
+                status.className = 'form-status success';
+                status.textContent = 'Thank you. Your message has been received — our team will reach out shortly.';
+                btn.textContent = 'Send Message';
+                btn.disabled = false;
+                form.reset();
+            })
+            .catch(() => {
+                status.className = 'form-status error';
+                status.textContent = 'Something went wrong. Please try again or WhatsApp us directly.';
+                btn.textContent = 'Send Message';
+                btn.disabled = false;
+            });
         }
     </script>
 </body>
