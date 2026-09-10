@@ -1,1 +1,415 @@
-w
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Seovaro</title>
+    <meta name="description" content="Seovaro Privacy Policy — how we collect, use, and protect your information." />
+    <link rel="canonical" href="https://seovaro.online/privacy-policy.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230d3b3a' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='45' font-weight='bold' fill='%23f4a583' text-anchor='middle'%3ESV%3C/text%3E%3C/svg%3E" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFGR5BBHW2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WFGR5BBHW2');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background: #faf6f1; color: #2c2c2c; font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+
+        :root {
+            --primary: #0d3b3a;
+            --primary-light: #1a5554;
+            --accent: #f4a583;
+            --accent-dark: #e8935c;
+            --secondary: #8a9b8f;
+            --light: #faf6f1;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        header {
+            background: var(--white);
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(13, 59, 58, 0.08);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 22px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-badge {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        nav { display: flex; gap: 50px; list-style: none; }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+            transition: width 0.35s ease;
+        }
+
+        nav a:hover::after { width: 100%; }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
+        }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 6px; }
+        .hamburger span { width: 24px; height: 2.5px; background: var(--primary); border-radius: 2px; }
+
+        .page-hero {
+            background: linear-gradient(135deg, #faf6f1 0%, #f5f0e8 50%, var(--light) 100%);
+            padding: 100px 50px 70px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(244, 165, 131, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .page-hero-content { position: relative; z-index: 1; }
+
+        .page-hero .label {
+            font-size: 11px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            display: block;
+        }
+
+        .page-hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 52px;
+            color: var(--primary);
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero p.updated {
+            margin-top: 18px;
+            font-size: 13px;
+            color: #6a6a6a;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 90px 50px 130px;
+        }
+
+        .policy-block { margin-bottom: 55px; }
+
+        .policy-block h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 27px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .policy-block h2 i { font-size: 19px; color: var(--accent); }
+
+        .policy-block p {
+            font-size: 15px;
+            color: #6a6a6a;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            font-weight: 300;
+        }
+
+        .policy-block ul { list-style: none; margin-bottom: 16px; }
+
+        .policy-block ul li {
+            font-size: 15px;
+            color: #6a6a6a;
+            line-height: 1.9;
+            padding-left: 26px;
+            position: relative;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .policy-block ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 1px;
+        }
+
+        .policy-block a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
+        .policy-block a:hover { color: var(--primary); }
+
+        .contact-callout {
+            border-left: 4px solid var(--accent);
+            background: var(--white);
+            padding: 40px 45px;
+        }
+
+        .contact-callout h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 21px;
+            color: var(--primary);
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .contact-callout p { font-size: 14px; color: #6a6a6a; line-height: 1.85; margin-bottom: 8px; font-weight: 300; }
+
+        .floating-contact { position: fixed; right: 35px; bottom: 35px; z-index: 99; }
+
+        .contact-options {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 15px;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .floating-contact:hover .contact-options { display: flex; }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(244, 165, 131, 0.2);
+            border: none;
+        }
+
+        .float-btn:hover { transform: scale(1.1); }
+        .float-whatsapp { background: #25D366; }
+        .float-email { background: #EA4335; }
+        .float-linkedin { background: #0077B5; }
+
+        .float-main {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--white);
+            width: 65px;
+            height: 65px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .hamburger { display: flex; }
+            .header-container { padding: 16px 30px; }
+            .page-hero { padding: 65px 30px 50px; }
+            .page-hero h1 { font-size: 32px; }
+            .container { padding: 60px 30px 90px; }
+            .contact-callout { padding: 30px 25px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <div class="logo-badge">SV</div>
+                SEOVARO
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/923074646927" class="cta-btn">Consultation</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="label">Legal</span>
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: September 2026</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="policy-block">
+            <h2><i class="fas fa-info-circle"></i>Overview</h2>
+            <p>Seovaro ("we", "us", "our") operates the seovaro.online website. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you visit our site or engage our enterprise SEO and growth strategy services.</p>
+        </div>
+
+        <div class="policy-block">
+            <h2><i class="fas fa-database"></i>Information We Collect</h2>
+            <p>We may collect the following categories of information:</p>
+            <ul>
+                <li>Contact details you provide, such as your name, email address, and company name, when you reach out via our contact form, WhatsApp, or email.</li>
+                <li>Usage data collected automatically, including pages visited, browser type, device information, and general location, through analytics tools such as Google Analytics.</li>
+                <li>Newsletter subscription information, limited to the email address you submit.</li>
+                <li>Communications you send us, including strategy briefs, engagement details, and correspondence related to our services.</li>
+            </ul>
+        </div>
+
+        <div class="policy-block">
+            <h2><i class="fas fa-cogs"></i>How We Use Information</h2>
+            <p>Information we collect is used to:</p>
+            <ul>
+                <li>Respond to inquiries and provide requested enterprise SEO and growth strategy services.</li>
+                <li>Send newsletters and strategic intelligence to subscribers who opt in.</li>
+                <li>Improve our website, content, and service offerings based on usage patterns.</li>
+                <li>Meet legal, contractual, and regulatory obligations.</li>
+            </ul>
+        </div>
+
+        <div class="policy-block">
+            <h2><i class="fas fa-share-alt"></i>Sharing of Information</h2>
+            <p>We do not sell your personal information. We may share limited information with trusted service providers who assist in operating our website and delivering services (for example, hosting, analytics, and email delivery providers), and only to the extent necessary for them to perform those functions on our behalf.</p>
+        </div>
+
+        <div class="policy-block">
+            <h2><i class="fas fa-cookie-bite"></i>Cookies and Tracking</h2>
+            <p>Our website uses cookies and similar tracking technologies, including Google Analytics, to understand how visitors use our site and to improve the browsing experience. You can control or disable cookies through your browser settings, though some site features may not function properly without them.</p>
+        </div>
+
+        <div class="policy-block">
+            <h2><i class="fas fa-lock"></i>Data Security</h2>
+            <p>We take reasonable administrative and technical measures to protect the information we hold. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+        </div>
+
+        <div class="policy-block">
+            <h2><i class="fas fa-user-shield"></i>Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have the right to access, correct, or request deletion of your personal information, and to opt out of marketing communications at any time by contacting us using the details below.</p>
+        </div>
+
+        <div class="policy-block">
+            <h2><i class="fas fa-edit"></i>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "Last updated" date.</p>
+        </div>
+
+        <div class="contact-callout">
+            <h3>Questions About This Policy</h3>
+            <p><strong>Nadeem Mayo</strong> — Global Director</p>
+            <p><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope"></i> nadeemonlin@gmail.com</a></p>
+            <p><a href="https://wa.me/923074646927"><i class="fab fa-whatsapp"></i> WhatsApp Direct Line</a></p>
+        </div>
+    </div>
+
+    <div class="floating-contact">
+        <div class="contact-options">
+            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button class="float-btn float-main" title="Contact Options">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+</body>
+</html>
