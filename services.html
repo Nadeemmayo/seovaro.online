@@ -1,768 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Services — Seovaro Enterprise Digital Intelligence & Growth Strategy</title>
-    <meta name="description" content="Explore Seovaro's enterprise services: SEO strategy, link architecture, content intelligence, technical optimization, engagement campaigns, and brand authority building." />
-    <link rel="canonical" href="https://seovaro.online/services.html" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230d3b3a' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='45' font-weight='bold' fill='%23f4a583' text-anchor='middle'%3ESV%3C/text%3E%3C/svg%3E" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Services — Seovaro Enterprise Growth Strategy" />
-    <meta property="og:url" content="https://seovaro.online/services.html" />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEOVARO"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-SEOVARO');
-    </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: #faf6f1;
-            color: #2c2c2c;
-            font-family: 'DM Sans', sans-serif;
-            overflow-x: hidden;
-        }
-
-        :root {
-            --primary: #0d3b3a;
-            --primary-light: #1a5554;
-            --accent: #f4a583;
-            --accent-dark: #e8935c;
-            --secondary: #8a9b8f;
-            --light: #faf6f1;
-            --dark: #1a1a1a;
-            --white: #ffffff;
-        }
-
-        header {
-            background: var(--white);
-            border-bottom: 2px solid var(--primary);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 8px rgba(13, 59, 58, 0.08);
-        }
-
-        .header-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 22px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Merriweather', serif;
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--primary);
-            letter-spacing: 2px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo-badge {
-            width: 42px;
-            height: 42px;
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        nav {
-            display: flex;
-            gap: 50px;
-            list-style: none;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #4a4a4a;
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            position: relative;
-            padding-bottom: 4px;
-        }
-
-        nav a.active,
-        nav a:hover {
-            color: var(--accent);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
-            transition: width 0.35s ease;
-        }
-
-        nav a.active::after,
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        .cta-btn {
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            color: var(--white);
-            border: none;
-            padding: 12px 30px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-weight: 700;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(244, 165, 131, 0.25);
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 6px;
-        }
-
-        .hamburger span {
-            width: 24px;
-            height: 2.5px;
-            background: var(--primary);
-            border-radius: 2px;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #faf6f1 0%, #f5f0e8 50%, var(--light) 100%);
-            padding: 110px 50px 100px;
-            text-align: center;
-            border-bottom: 2px solid var(--primary);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(244, 165, 131, 0.08) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-family: 'Merriweather', serif;
-            font-size: 62px;
-            color: var(--primary);
-            margin-bottom: 22px;
-            font-weight: 400;
-            line-height: 1.15;
-            letter-spacing: -1px;
-        }
-
-        .hero h1 .highlight {
-            color: var(--accent);
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 17px;
-            color: #6a6a6a;
-            max-width: 750px;
-            margin: 0 auto;
-            line-height: 1.8;
-            font-weight: 300;
-        }
-
-        .container {
-            max-width: 1250px;
-            margin: 0 auto;
-            padding: 100px 50px;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 70px;
-        }
-
-        .section-header .label {
-            font-size: 11px;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-            font-weight: 700;
-            display: block;
-        }
-
-        .section-header h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 56px;
-            color: var(--primary);
-            font-weight: 400;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            letter-spacing: -0.5px;
-        }
-
-        .section-header h2 .highlight {
-            color: var(--accent);
-            font-weight: 700;
-        }
-
-        .section-header p {
-            font-size: 16px;
-            color: #6a6a6a;
-            max-width: 680px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        .service-row {
-            display: grid;
-            grid-template-columns: 90px 1fr;
-            gap: 40px;
-            padding: 55px 0;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .service-row:first-child {
-            padding-top: 0;
-        }
-
-        .service-row:last-child {
-            border-bottom: none;
-        }
-
-        .service-num {
-            font-family: 'Merriweather', serif;
-            font-size: 40px;
-            color: var(--accent);
-            font-weight: 300;
-        }
-
-        .service-body h3 {
-            font-family: 'Merriweather', serif;
-            font-size: 30px;
-            color: var(--primary);
-            font-weight: 400;
-            margin-bottom: 16px;
-            letter-spacing: -0.5px;
-        }
-
-        .service-body > p {
-            font-size: 15px;
-            color: #6a6a6a;
-            line-height: 1.8;
-            margin-bottom: 26px;
-            font-weight: 300;
-            max-width: 720px;
-        }
-
-        .service-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 14px;
-            list-style: none;
-        }
-
-        .service-features li {
-            font-size: 13px;
-            color: #4a4a4a;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-weight: 500;
-        }
-
-        .service-features i {
-            color: var(--accent);
-            margin-top: 3px;
-            font-size: 12px;
-        }
-
-        .why-choose {
-            background: linear-gradient(135deg, #f5f0e8 0%, var(--light) 100%);
-            border: 2px solid var(--primary);
-            border-radius: 4px;
-            padding: 80px 70px;
-            margin: 100px 0;
-        }
-
-        .why-choose h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 48px;
-            color: var(--primary);
-            margin-bottom: 60px;
-            font-weight: 400;
-            letter-spacing: -0.5px;
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 40px;
-        }
-
-        .process-step {
-            background: var(--white);
-            padding: 34px 28px;
-            border-left: 4px solid var(--accent);
-        }
-
-        .process-step span {
-            font-family: 'Merriweather', serif;
-            font-size: 28px;
-            color: var(--accent);
-            font-weight: 700;
-            display: block;
-            margin-bottom: 14px;
-        }
-
-        .process-step h4 {
-            font-family: 'Merriweather', serif;
-            font-size: 18px;
-            color: var(--primary);
-            font-weight: 400;
-            margin-bottom: 10px;
-        }
-
-        .process-step p {
-            font-size: 13px;
-            color: #6a6a6a;
-            line-height: 1.7;
-            font-weight: 300;
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            color: var(--white);
-            padding: 100px 70px;
-            text-align: center;
-            border-radius: 4px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-section::after {
-            content: '';
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .cta-section h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 52px;
-            margin-bottom: 25px;
-            font-weight: 400;
-            letter-spacing: -0.5px;
-        }
-
-        .cta-section .highlight {
-            color: var(--accent);
-            font-weight: 700;
-        }
-
-        .cta-section p {
-            font-size: 16px;
-            margin-bottom: 40px;
-            opacity: 0.96;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.8;
-            font-weight: 300;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            color: var(--white);
-            border: none;
-            padding: 16px 42px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(244, 165, 131, 0.3);
-        }
-
-        footer {
-            background: var(--primary);
-            color: rgba(255, 255, 255, 0.7);
-            padding: 40px 50px;
-            text-align: center;
-            font-size: 12px;
-            font-weight: 300;
-        }
-
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .floating-contact {
-            position: fixed;
-            right: 35px;
-            bottom: 35px;
-            z-index: 99;
-        }
-
-        .contact-options {
-            display: none;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 15px;
-            animation: slideUp 0.3s ease;
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .floating-contact:hover .contact-options {
-            display: flex;
-        }
-
-        .float-btn {
-            width: 55px;
-            height: 55px;
-            border-radius: 3px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-decoration: none;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(244, 165, 131, 0.2);
-            border: none;
-        }
-
-        .float-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .float-whatsapp {
-            background: #25D366;
-        }
-
-        .float-email {
-            background: #EA4335;
-        }
-
-        .float-linkedin {
-            background: #0077B5;
-        }
-
-        .float-main {
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            color: var(--white);
-            width: 65px;
-            height: 65px;
-            font-size: 24px;
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            .header-container {
-                padding: 16px 30px;
-            }
-
-            .hero {
-                padding: 70px 30px 60px;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .container {
-                padding: 60px 30px;
-            }
-
-            .section-header h2 {
-                font-size: 36px;
-            }
-
-            .service-row {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-
-            .service-body h3 {
-                font-size: 24px;
-            }
-
-            .why-choose {
-                padding: 50px 30px;
-            }
-
-            .cta-section {
-                padding: 60px 30px;
-            }
-
-            .cta-section h2 {
-                font-size: 36px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services | SEO, Digital Experience &amp; Paid Media | Seovaro</title>
+<meta name="description" content="Seovaro&#x27;s services: complete, technical, on-page, off-page and local SEO, link building, content, web development, custom websites and Google, Meta, Facebook, Instagram &amp; TikTok ads.">
+<link rel="canonical" href="https://seovaro.online/services.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0E0D0B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="Seovaro">
+<meta property="og:title" content="Services | SEO, Digital Experience &amp; Paid Media | Seovaro">
+<meta property="og:description" content="Seovaro&#x27;s services: complete, technical, on-page, off-page and local SEO, link building, content, web development, custom websites and Google, Meta, Facebook, Instagram &amp; TikTok ads.">
+<meta property="og:url" content="https://seovaro.online/services.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://seovaro.online/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Services | SEO, Digital Experience &amp; Paid Media | Seovaro">
+<meta name="twitter:description" content="Seovaro&#x27;s services: complete, technical, on-page, off-page and local SEO, link building, content, web development, custom websites and Google, Meta, Facebook, Instagram &amp; TikTok ads.">
+<meta name="twitter:image" content="https://seovaro.online/assets/img/og-image.png">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WFGR5BBHW2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WFGR5BBHW2');</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://seovaro.online/#organization",
+   "name": "Seovaro",
+   "url": "https://seovaro.online/",
+   "logo": "https://seovaro.online/assets/img/logo.png",
+   "image": "https://seovaro.online/assets/img/og-image.png",
+   "description": "Seovaro is a premium digital growth consultancy offering senior-led SEO, authority building, web development and paid media for established brands.",
+   "email": "nadeemonlin@gmail.com",
+   "telephone": "+923074646927",
+   "founder": {
+    "@type": "Person",
+    "name": "Nadeem Mayo"
+   },
+   "areaServed": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/menadeemmayos/",
+    "https://www.facebook.com/share/19aDt6pcgh/",
+    "https://x.com/Nadeem_seo",
+    "https://www.instagram.com/menadeemmayo",
+    "https://www.fiverr.com/nadeem_mayo"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://seovaro.online/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Services",
+     "item": "https://seovaro.online/services.html"
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "url": "https://seovaro.online/complete-seo.html",
+     "name": "Complete SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "url": "https://seovaro.online/on-page-seo.html",
+     "name": "On-Page SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "url": "https://seovaro.online/off-page-seo.html",
+     "name": "Off-Page SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "url": "https://seovaro.online/technical-seo.html",
+     "name": "Technical SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "url": "https://seovaro.online/local-seo.html",
+     "name": "Local SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "url": "https://seovaro.online/link-building.html",
+     "name": "Link Building & Guest Posting"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "url": "https://seovaro.online/content-writing.html",
+     "name": "SEO Content Writing"
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "url": "https://seovaro.online/web-development.html",
+     "name": "Web Development"
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "url": "https://seovaro.online/custom-website.html",
+     "name": "Custom Website Design"
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "url": "https://seovaro.online/google-ads.html",
+     "name": "Google Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "url": "https://seovaro.online/meta-ads.html",
+     "name": "Meta Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "url": "https://seovaro.online/facebook-ads.html",
+     "name": "Facebook Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 13,
+     "url": "https://seovaro.online/instagram-ads.html",
+     "name": "Instagram Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 14,
+     "url": "https://seovaro.online/tiktok-ads.html",
+     "name": "TikTok Ads"
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <a href="/" class="logo">
-                <div class="logo-badge">SV</div>
-                SEOVARO
-            </a>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/services.html" class="active">Services</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
-            </nav>
-            <div style="display: flex; gap: 15px; align-items: center;">
-                <a href="https://wa.me/923074646927" class="cta-btn">Consultation</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Services Built for <span class="highlight">Enterprise Scale</span></h1>
-            <p>Six disciplines, one strategy. Every engagement is shaped around your market position, competitive landscape, and growth targets — not a fixed package.</p>
-        </div>
-    </section>
-
-    <div class="container">
-        <section>
-            <div class="section-header">
-                <span class="label">What We Do</span>
-                <h2>A Full Stack of <span class="highlight">Growth Disciplines</span></h2>
-                <p>Each service is delivered by senior strategists, backed by proprietary research and direct executive reporting.</p>
-            </div>
-
-            <div>
-                <div class="service-row">
-                    <div class="service-num">01</div>
-                    <div class="service-body">
-                        <h3>Enterprise SEO Strategy</h3>
-                        <p>Advanced search strategy combining technical mastery, content excellence, and authority building for sustained market leadership across every search surface that matters to your business.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i>Multi-market search roadmaps</li>
-                            <li><i class="fas fa-check"></i>Competitive share-of-search analysis</li>
-                            <li><i class="fas fa-check"></i>Enterprise information architecture</li>
-                            <li><i class="fas fa-check"></i>Quarterly board reporting</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-row">
-                    <div class="service-num">02</div>
-                    <div class="service-body">
-                        <h3>Strategic Link Architecture</h3>
-                        <p>Curated high-authority placements and intelligent backlink strategies from premium publications and tier-one domains, built to compound authority over time.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i>Tier-one publication outreach</li>
-                            <li><i class="fas fa-check"></i>Digital PR campaign design</li>
-                            <li><i class="fas fa-check"></i>Link profile audits and cleanup</li>
-                            <li><i class="fas fa-check"></i>Authority benchmarking</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-row">
-                    <div class="service-num">03</div>
-                    <div class="service-body">
-                        <h3>Content Intelligence</h3>
-                        <p>Strategic content development and thought leadership positioning that establishes authority, answers buyer questions, and drives enterprise growth at every funnel stage.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i>Editorial strategy and calendars</li>
-                            <li><i class="fas fa-check"></i>Executive thought leadership</li>
-                            <li><i class="fas fa-check"></i>Content gap and intent mapping</li>
-                            <li><i class="fas fa-check"></i>Performance-driven briefs</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-row">
-                    <div class="service-num">04</div>
-                    <div class="service-body">
-                        <h3>Technical Precision</h3>
-                        <p>Sophisticated audits and implementation ensuring maximum search visibility, performance optimization, and core vitals excellence across complex enterprise platforms.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i>Full technical SEO audits</li>
-                            <li><i class="fas fa-check"></i>Core Web Vitals optimization</li>
-                            <li><i class="fas fa-check"></i>Site migration strategy</li>
-                            <li><i class="fas fa-check"></i>International SEO structure</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-row">
-                    <div class="service-num">05</div>
-                    <div class="service-body">
-                        <h3>Engagement Campaigns</h3>
-                        <p>Precision email strategies and customer journey optimization for conversion acceleration, retention, and lifetime value enhancement.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i>Lifecycle and journey mapping</li>
-                            <li><i class="fas fa-check"></i>Segmentation and personalization</li>
-                            <li><i class="fas fa-check"></i>Conversion rate optimization</li>
-                            <li><i class="fas fa-check"></i>Retention and LTV modeling</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-row">
-                    <div class="service-num">06</div>
-                    <div class="service-body">
-                        <h3>Brand Authority Building</h3>
-                        <p>Premium PR placement and thought leadership development for market positioning, influence, and industry recognition among the audiences that matter most.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i>Media relations and PR strategy</li>
-                            <li><i class="fas fa-check"></i>Industry award positioning</li>
-                            <li><i class="fas fa-check"></i>Speaking and panel placement</li>
-                            <li><i class="fas fa-check"></i>Reputation monitoring</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="why-choose">
-            <h2>How an <span style="color: var(--accent);">Engagement Runs</span></h2>
-            <div class="process-grid">
-                <div class="process-step">
-                    <span>01</span>
-                    <h4>Discovery</h4>
-                    <p>We audit your market position, competitors, and existing digital footprint.</p>
-                </div>
-                <div class="process-step">
-                    <span>02</span>
-                    <h4>Strategy</h4>
-                    <p>A bespoke roadmap is built around your growth targets and timeline.</p>
-                </div>
-                <div class="process-step">
-                    <span>03</span>
-                    <h4>Execution</h4>
-                    <p>Our team implements across SEO, content, technical, and authority tracks.</p>
-                </div>
-                <div class="process-step">
-                    <span>04</span>
-                    <h4>Reporting</h4>
-                    <p>Quarterly board-level reviews tie every initiative back to business impact.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Let's Build Your <span class="highlight">Growth Roadmap</span></h2>
-                <p>Tell us about your market and objectives — we'll come back with a strategy built specifically for your business.</p>
-                <a href="https://wa.me/923074646927" class="btn-primary">Schedule Executive Session</a>
-            </div>
-        </section>
+<body class="dark">
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>Senior-led search, web and media strategy for established brands</span>
+    <div class="topbar-links"><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope"></i>nadeemonlin@gmail.com</a><a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a></div>
+  </div></div>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="Seovaro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgh" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D4AF5A"/><stop offset="1" stop-color="#8A6A22"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgh)"/><path d="M14 14h8l2 6 2-6h8" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m18 21 6 14 6-14" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">Seo<span>varo</span></span><span class="brand-tag">Premium growth strategy</span></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="nav-link" href="/">Home</a>
+      <div class="has-menu">
+        <button class="nav-link active" type="button" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></button>
+        <div class="menu"><div class="mega"><div class="menu-col"><h4>Search (SEO)</h4><a href="/complete-seo.html"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>Complete SEO</a><a href="/on-page-seo.html"><i class="fas fa-file-lines" aria-hidden="true"></i>On-Page SEO</a><a href="/off-page-seo.html"><i class="fas fa-link" aria-hidden="true"></i>Off-Page SEO</a><a href="/technical-seo.html"><i class="fas fa-gears" aria-hidden="true"></i>Technical SEO</a><a href="/local-seo.html"><i class="fas fa-location-dot" aria-hidden="true"></i>Local SEO</a><a href="/link-building.html"><i class="fas fa-newspaper" aria-hidden="true"></i>Link Building & Guest Posting</a><a href="/content-writing.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>SEO Content Writing</a></div><div class="menu-col"><h4>Web Development</h4><a href="/web-development.html"><i class="fas fa-code" aria-hidden="true"></i>Web Development</a><a href="/custom-website.html"><i class="fas fa-laptop-code" aria-hidden="true"></i>Custom Website Design</a></div><div class="menu-col"><h4>Paid Ads</h4><a href="/google-ads.html"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Ads</a><a href="/meta-ads.html"><i class="fa-brands fa-meta" aria-hidden="true"></i>Meta Ads</a><a href="/facebook-ads.html"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook Ads</a><a href="/instagram-ads.html"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram Ads</a><a href="/tiktok-ads.html"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok Ads</a></div></div>
+          <a href="/services.html" style="margin-top:14px;justify-content:center;background:var(--bg-tint);color:var(--brand)">View all services <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+      
+      <a class="nav-link" href="/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="/about.html">About</a>
+      <a class="nav-link" href="/blog.html">Blog</a>
+      <a class="nav-link" href="/FAQs.html">FAQ</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="/contact.html">Request a Consultation</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-header" href="/contact.html">Request a Consultation</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </div>
-
-    <footer>
-        © 2026 Seovaro. All Rights Reserved. | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms.html">Terms</a>
-    </footer>
-
-    <div class="floating-contact">
-        <div class="contact-options">
-            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <button class="float-btn float-main" title="Contact Options">
-            <i class="fas fa-comments"></i>
-        </button>
+  </div>
+</header>
+<main>
+<section class="hero page-hero"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><b>Services</b></nav>
+  <span class="eyebrow">Services</span>
+  <h1 style="max-width:880px">Practice areas for <span class="grad-text">established brands</span></h1>
+  <p class="lead">Search, digital experience and paid media, each led by senior strategists and executed by specialists.</p>
+  <div class="hero-actions" style="margin-bottom:0"><a class="btn btn-accent" href="#seo">SEO</a><a class="btn btn-outline-light" href="#web">Web development</a><a class="btn btn-outline-light" href="#ads">Paid ads</a></div>
+</div></section><section class="section" id="seo"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i> Search (SEO)</span><h2>Search (SEO) services</h2><p>Senior-led search strategy, technical excellence and premium editorial authority.</p></div>
+  <div class="grid g-3"><a class="card reveal" href="/complete-seo.html"><div class="icon"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></div><h3>Complete SEO</h3><p>A full search programme for established brands: strategy, technical excellence, content and editorial authority, governed through…</p><span class="card-link">Explore Complete SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/on-page-seo.html"><div class="icon"><i class="fas fa-file-lines" aria-hidden="true"></i></div><h3>On-Page SEO</h3><p>Every key page refined for relevance, clarity and conversion, while protecting your brand voice and design…</p><span class="card-link">Explore On-Page SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/off-page-seo.html"><div class="icon"><i class="fas fa-link" aria-hidden="true"></i></div><h3>Off-Page SEO</h3><p>Off-page programmes built around placements in respected publications, carefully aligned with your reputation and…</p><span class="card-link">Explore Off-Page SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/technical-seo.html"><div class="icon"><i class="fas fa-gears" aria-hidden="true"></i></div><h3>Technical SEO</h3><p>Rigorous technical programmes for large and complex sites: crawl efficiency, performance, internationalisation and…</p><span class="card-link">Explore Technical SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/local-seo.html"><div class="icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div><h3>Local SEO</h3><p>Location visibility managed with consistency and care across every branch, office or…</p><span class="card-link">Explore Local SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/link-building.html"><div class="icon"><i class="fas fa-newspaper" aria-hidden="true"></i></div><h3>Link Building & Guest Posting</h3><p>Considered placements on genuine, relevant publications, with content written to the publication's standard and your…</p><span class="card-link">Explore Link Building & Guest Posting <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/content-writing.html"><div class="icon"><i class="fas fa-pen-nib" aria-hidden="true"></i></div><h3>SEO Content Writing</h3><p>Expert-led content strategy and writing for websites, thought leadership and editorial…</p><span class="card-link">Explore SEO Content Writing <i class="fas fa-arrow-right"></i></span></a></div>
+</div></section><section class="section section-soft" id="web"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow"><i class="fas fa-code" aria-hidden="true"></i> Web Development</span><h2>Web Development services</h2><p>Digital experiences built to the standard of your brand.</p></div>
+  <div class="grid g-2"><a class="card reveal" href="/web-development.html"><div class="icon alt"><i class="fas fa-code" aria-hidden="true"></i></div><h3>Web Development</h3><p>Robust, fast and secure websites built to the standard of your brand, with search performance designed in from the…</p><span class="card-link">Explore Web Development <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/custom-website.html"><div class="icon alt"><i class="fas fa-laptop-code" aria-hidden="true"></i></div><h3>Custom Website Design</h3><p>Custom design that expresses your brand's quality, crafted for discerning audiences and built to…</p><span class="card-link">Explore Custom Website Design <i class="fas fa-arrow-right"></i></span></a></div>
+</div></section><section class="section" id="ads"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow"><i class="fas fa-bullhorn" aria-hidden="true"></i> Paid Ads</span><h2>Paid Ads services</h2><p>Paid media managed with rigour, transparency and brand safety.</p></div>
+  <div class="grid g-3"><a class="card reveal" href="/google-ads.html"><div class="icon amber"><i class="fa-brands fa-google" aria-hidden="true"></i></div><h3>Google Ads</h3><p>Search, Performance Max, Shopping and YouTube investment managed against clear economics, with brand safety and…</p><span class="card-link">Explore Google Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/meta-ads.html"><div class="icon amber"><i class="fa-brands fa-meta" aria-hidden="true"></i></div><h3>Meta Ads</h3><p>Facebook and Instagram campaigns that perform without compromising brand standards, measured with server-side…</p><span class="card-link">Explore Meta Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/facebook-ads.html"><div class="icon amber"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></div><h3>Facebook Ads</h3><p>Targeted Facebook campaigns for lead generation and sales, with brand-appropriate creative and careful…</p><span class="card-link">Explore Facebook Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/instagram-ads.html"><div class="icon amber"><i class="fa-brands fa-instagram" aria-hidden="true"></i></div><h3>Instagram Ads</h3><p>Reels, Stories and feed campaigns crafted to suit premium brands, optimised for engagement and…</p><span class="card-link">Explore Instagram Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/tiktok-ads.html"><div class="icon amber"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></div><h3>TikTok Ads</h3><p>TikTok campaigns that connect with new audiences while respecting your brand, using native creative and creator…</p><span class="card-link">Explore TikTok Ads <i class="fas fa-arrow-right"></i></span></a></div>
+</div></section><section class="section-sm"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><span class="eyebrow">Private consultation</span><h2>Let's discuss your growth agenda</h2><p>Request a private consultation. We'll reply within 24 hours to arrange a call at your convenience.</p></div>
+    <div class="cta-actions">
+      <a class="btn btn-accent" href="/contact.html">Request a Private Consultation <i class="fas fa-arrow-right"></i></a>
+      <a class="btn btn-outline-light" href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
     </div>
+  </div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" aria-label="Seovaro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D4AF5A"/><stop offset="1" stop-color="#8A6A22"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgf)"/><path d="M14 14h8l2 6 2-6h8" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m18 21 6 14 6-14" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">Seo<span>varo</span></span><span class="brand-tag">Premium growth strategy</span></span></a>
+        <p>Seovaro is a senior-led growth consultancy for established brands: search, authority, digital experience and paid media, delivered with discretion.</p>
+        <div class="socials"><a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/menadeemmayo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://x.com/Nadeem_seo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="https://t.me/Nadeemmayos" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a></div>
+        <div class="market-btns"><a href="https://www.fiverr.com/nadeem_mayo" target="_blank" rel="noopener">Hire on Fiverr</a><a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" rel="noopener">Hire on Upwork</a></div>
+      </div>
+      <div><h4>SEO Services</h4><div class="footer-links"><a href="/complete-seo.html">Complete SEO</a><a href="/on-page-seo.html">On-Page SEO</a><a href="/off-page-seo.html">Off-Page SEO</a><a href="/technical-seo.html">Technical SEO</a><a href="/local-seo.html">Local SEO</a><a href="/link-building.html">Link Building & Guest Posting</a><a href="/content-writing.html">SEO Content Writing</a></div></div>
+      <div><h4>Web &amp; Ads</h4><div class="footer-links"><a href="/web-development.html">Web Development</a><a href="/custom-website.html">Custom Website Design</a><a href="/google-ads.html">Google Ads</a><a href="/meta-ads.html">Meta Ads</a><a href="/facebook-ads.html">Facebook Ads</a><a href="/instagram-ads.html">Instagram Ads</a><a href="/tiktok-ads.html">TikTok Ads</a></div></div>
+      <div><h4>Company</h4><div class="footer-links">
+        <a href="/about.html">About</a><a href="/portfolio.html">Portfolio</a><a href="/blog.html">Blog</a><a href="/FAQs.html">FAQ</a><a href="/contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4>
+        <div class="footer-contact">
+          <a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope"></i>nadeemonlin@gmail.com</a>
+          <a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a>
+        </div>
+        <div class="pay"><span>PayPal</span><span>Payoneer</span><span>Wise</span><span>Visa</span><span>Mastercard</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Seovaro. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a><a href="/refund-policy.html">Refund Policy</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923074646927?text=Hi%20Seovaro%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>

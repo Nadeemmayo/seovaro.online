@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 56" role="img" aria-label="Seovaro">
+<g transform="translate(0 4)"><svg viewBox="0 0 48 48" width="48" height="48"><defs><linearGradient id="lgL" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D4AF5A"/><stop offset="1" stop-color="#8A6A22"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgL)"/><path d="M14 14h8l2 6 2-6h8" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m18 21 6 14 6-14" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></g>
+<text x="62" y="29" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#0E0D0B" letter-spacing="-.4">Seo<tspan fill="#B8913A">varo</tspan></text>
+<text x="63" y="47" font-family="Figtree, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#5A6081" letter-spacing="2.4">PREMIUM GROWTH STRATEGY</text>
+</svg>
